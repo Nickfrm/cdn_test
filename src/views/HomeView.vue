@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="wrap">
+      <h1>Simple Video Player Example</h1>
+      <VideoPlayer msg="Welcome to Your Vue.js App" />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import VideoPlayer from "@/components/VideoPlayer.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    VideoPlayer,
   },
 };
 </script>
+<style scoped>
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+</style>
